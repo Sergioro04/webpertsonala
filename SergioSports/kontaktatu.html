@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SergioSports-HOME</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/kontaktatu.css">
+
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- logo -->
+        <div id="logo">SergioSports</div>
+        <!-- navbar -->
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ekipoak.html">EKIPOAK</a></li>
+                <li><a href="kontaktatu.html">KONTAKTUA</a></li>
+                <li id="login"><a href="index.html">SERGIO</a></li>
+            </ul>
+        </div>
+        <body>  
+            <div class="contact_form">
+            <div class="formulario">      
+                <h1>Kontaktatu</h1>
+                <h3>Kontataktatu SergioSports-ekin</h3>
+                    <form action="submeter-formulario.php" method="post">       
+                    <p>
+                            <label for="nombre" class="colocar_nombre">Izena
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                        
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Telefono zenbakia
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                        
+                        <p>
+                            <label for="website" class="colocar_website">Web orrialdea
+                            </label>
+                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                        </p>    
+                        
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                        
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mezua
+                            <span class="obligatorio">*</span>
+                            </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                        </p>                    
+                        
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>derrigorrezkoak dira.
+                        </p>          
+                    </form>
+            </div>  
+            </div>
+    </body>
+</html>
